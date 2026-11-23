@@ -1086,3 +1086,52 @@ footer {
         text-align: center;
     }
 }
+
+
+/* Navbar hamesha visible (hamburger menu band) */
+.menu-toggle {
+    display: none !important;
+}
+
+.nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .call-btn {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        padding-top: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .nav-links a {
+        padding: 6px 0;
+        border-bottom: 2px solid transparent;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nav-links {
+        gap: 4px 16px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+}
