@@ -1,0 +1,86 @@
+{% extends 'website/base.html' %}
+
+{% block title %}About Us | INSULI HITECH ENGINEERS{% endblock %}
+
+{% block content %}
+
+<section class="page-banner">
+    <span>GET TO KNOW US</span>
+    <h1>About <b>Our Company</b></h1>
+    <p>Learn more about INSULI HITECH ENGINEERS.</p>
+</section>
+
+
+<section class="section about-section">
+
+    <div>
+        <span class="tagline">WHO WE ARE</span>
+
+        <h2>INSULI HITECH ENGINEERS</h2>
+
+        <p>
+            INSULI HITECH ENGINEERS is an independent contracting
+            business providing industrial insulation, scaffolding
+            and manpower supply services.
+        </p>
+
+        <p>
+            With 6 years of experience, we support different
+            industrial project requirements across India.
+        </p>
+
+        <p>
+            Our work includes arranging a suitable workforce and
+            providing services according to project requirements.
+        </p>
+
+        <a href="{% url 'contact' %}" class="btn orange-btn">Contact Us</a>
+    </div>
+
+    <div class="company-details">
+
+        <h2>Company Overview</h2>
+
+        <p><b>Business</b> <span>Industrial Contracting</span></p>
+        <p><b>Experience</b> <span>6 Years</span></p>
+        <p><b>Services</b> <span>Insulation, Scaffolding, Manpower</span></p>
+        <p><b>Coverage</b> <span>All India</span></p>
+        <p><b>Location</b> <span>Sultanpur, Uttar Pradesh</span></p>
+
+    </div>
+
+</section>
+
+
+<section class="section light-section">
+
+    <div class="section-title">
+        <span>OUR PURPOSE</span>
+        <h2>Mission & Vision</h2>
+    </div>
+
+    <div class="service-container two-col">
+
+        <div class="service-card">
+            <div class="number">🎯</div>
+            <h3>Our Mission</h3>
+            <p>
+                To provide industrial services and workforce
+                support according to project requirements.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="number">🔭</div>
+            <h3>Our Vision</h3>
+            <p>
+                To build long-term professional relationships
+                and grow as a trusted contracting business.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

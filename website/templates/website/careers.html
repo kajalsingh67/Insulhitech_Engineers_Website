@@ -1,0 +1,72 @@
+{% extends 'website/base.html' %}
+
+{% block title %}Careers | INSULI HITECH ENGINEERS{% endblock %}
+
+{% block content %}
+
+<section class="page-banner">
+    <span>WORK WITH US</span>
+    <h1>Careers & <b>Opportunities</b></h1>
+    <p>Explore work opportunities with our business.</p>
+</section>
+
+
+<section class="section careers-section">
+
+    <div>
+
+        <span class="tagline">JOIN OUR WORKFORCE</span>
+
+        <h2>Build Your Career With Us</h2>
+
+        <p>
+            We welcome hardworking people interested in industrial
+            insulation, scaffolding and project-based work.
+        </p>
+
+        <h3>Work Categories</h3>
+
+        <ul class="tag-list">
+            <li>Insulation Workers</li>
+            <li>Scaffolding Workers</li>
+            <li>Skilled Workers</li>
+            <li>Unskilled Workers</li>
+            <li>Helpers</li>
+        </ul>
+
+    </div>
+
+
+    <div class="salary-box">
+
+        <span>INDICATIVE MONTHLY SALARY</span>
+
+        <h2>₹15,000 - ₹30,000</h2>
+
+        <p>
+            Actual salary depends on role, skills, experience
+            and project requirements. Please confirm details before joining.
+        </p>
+
+        <a href="tel:+918318028729" class="btn orange-btn">Call For Opportunities</a>
+
+        <br>
+
+        <a href="mailto:kajalsingh@gmail.com" class="email-link">✉ Email Us</a>
+
+    </div>
+
+</section>
+
+
+<section class="cta">
+
+    <h2>Interested In Working With Us?</h2>
+
+    <p>Contact us to ask about current opportunities.</p>
+
+    <a href="{% url 'contact' %}" class="btn orange-btn">Contact Us</a>
+
+</section>
+
+{% endblock %}

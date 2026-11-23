@@ -1,0 +1,121 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}INSULI HITECH ENGINEERS{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+
+        <div class="top-left">
+            <span>📞 8318028729</span>
+            <span>✉️ uttamsingh88056@gmail.com</span>
+            <span>📍Sector 61, Noida, Delhi NCR</span>
+        </div>
+
+        <div class="top-right">
+            Industrial Services Across India
+        </div>
+
+    </div>
+
+
+    <!-- NAVBAR -->
+    <header>
+
+        <nav class="navbar">
+
+            <a href="{% url 'home' %}" class="logo">
+                INSULI HITECH
+                <span>ENGINEERS</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="{% url 'home' %}" {% if request.resolver_match.url_name == 'home' %}class="active"{% endif %}>Home</a>
+                <a href="{% url 'about' %}" {% if request.resolver_match.url_name == 'about' %}class="active"{% endif %}>About Us</a>
+                <a href="{% url 'services' %}" {% if request.resolver_match.url_name == 'services' %}class="active"{% endif %}>Services</a>
+                <a href="{% url 'careers' %}" {% if request.resolver_match.url_name == 'careers' %}class="active"{% endif %}>Careers</a>
+                <a href="{% url 'contact' %}" {% if request.resolver_match.url_name == 'contact' %}class="active"{% endif %}>Contact Us</a>
+            </div>
+
+            <a href="tel:+918318028727" class="call-btn">☎ Call Now</a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>INSULI HITECH <span>ENGINEERS</span></h2>
+                <p>Professional industrial contracting services.</p>
+                <p>Serving projects across India.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="{% url 'services' %}">Services</a>
+                <a href="{% url 'careers' %}">Careers</a>
+                <a href="{% url 'contact' %}">Contact Us</a>
+            </div>
+
+            <div>
+                <h3>Our Services</h3>
+                <p>Insulation Work</p>
+                <p>Scaffolding</p>
+                <p>Manpower Supply</p>
+            </div>
+
+            <div>
+                <h3>Contact Details</h3>
+                <a href="tel:+918318028727">📞 8318028729</a>
+                <a href="mailto:uttamsingh88056@gmail.com">✉️ uttamsingh88056@gmail.com</a>
+                <p>📍 Sultanpur, Uttar Pradesh</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 INSULI HITECH ENGINEERS. All Rights Reserved.
+        </div>
+
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            document.getElementById('navLinks').classList.toggle('open');
+        });
+    </script>
+
+</body>
+
+</html>

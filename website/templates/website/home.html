@@ -1,0 +1,186 @@
+
+{% extends 'website/base.html' %}
+
+{% block title %}Home | INSULI HITECH ENGINEERS{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="tagline">INDUSTRIAL CONTRACTING SERVICES</span>
+
+        <h1>
+            INSULI HITECH
+            <span>ENGINEERS</span>
+        </h1>
+
+        <h2>Insulation, Scaffolding & Manpower Solutions</h2>
+
+        <p>
+            Reliable industrial insulation, scaffolding and manpower
+            support for projects across India.
+        </p>
+
+        <a href="{% url 'services' %}" class="btn orange-btn">Explore Services</a>
+        <a href="{% url 'contact' %}" class="btn outline-btn">Contact Us</a>
+
+    </div>
+
+    <div class="hero-image"></div>
+
+</section>
+
+
+<!-- STATS -->
+<section class="stats">
+
+    <div>
+        <h2>6+</h2>
+        <p>Years Experience</p>
+    </div>
+
+    <div>
+        <h2>3</h2>
+        <p>Core Services</p>
+    </div>
+
+    <div>
+        <h2>All India</h2>
+        <p>Service Coverage</p>
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+<section class="section">
+
+    <div class="section-title">
+        <span>WHAT WE DO</span>
+        <h2>Our Core Services</h2>
+        <p>Professional industrial services for different project requirements.</p>
+    </div>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <div class="number">01</div>
+            <h3>Insulation Work</h3>
+            <p>
+                Thermal, pipe, industrial and equipment
+                insulation services.
+            </p>
+            <a href="{% url 'services' %}">Read More →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="number">02</div>
+            <h3>Scaffolding</h3>
+            <p>
+                Scaffolding support for industrial and construction
+                project requirements.
+            </p>
+            <a href="{% url 'services' %}">Read More →</a>
+        </div>
+
+        <div class="service-card">
+            <div class="number">03</div>
+            <h3>Manpower Supply</h3>
+            <p>
+                Skilled workers, unskilled workers and helpers
+                for project-based work.
+            </p>
+            <a href="{% url 'services' %}">Read More →</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="section light-section">
+
+    <div class="section-title">
+        <span>WHY CHOOSE US</span>
+        <h2>Built For Project Needs</h2>
+        <p>What you can expect when you work with us.</p>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-item">
+            <div class="why-icon">🏆</div>
+            <h3>6+ Years Experience</h3>
+            <p>Hands-on experience in industrial contracting work.</p>
+        </div>
+
+        <div class="why-item">
+            <div class="why-icon">🇮🇳</div>
+            <h3>All India Support</h3>
+            <p>Services available for projects across India.</p>
+        </div>
+
+        <div class="why-item">
+            <div class="why-icon">👷</div>
+            <h3>Skilled Manpower</h3>
+            <p>Workers and helpers arranged as per project needs.</p>
+        </div>
+
+        <div class="why-item">
+            <div class="why-icon">📋</div>
+            <h3>Requirement Based</h3>
+            <p>Work planned according to your project requirements.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT PREVIEW -->
+<section class="about-preview">
+
+    <div>
+        <span class="tagline">ABOUT OUR COMPANY</span>
+
+        <h2>Supporting Projects With Industrial Solutions</h2>
+
+        <p>
+            INSULI HITECH ENGINEERS is an independent contracting
+            business providing insulation, scaffolding and manpower
+            supply services.
+        </p>
+
+        <p>
+            With 6 years of experience, we support project
+            requirements across India.
+        </p>
+
+        <a href="{% url 'about' %}" class="btn orange-btn">Know More</a>
+    </div>
+
+    <div class="about-box">
+        <h2>6+</h2>
+        <h3>Years Experience</h3>
+        <p>Industrial Contracting Services</p>
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <h2>Looking For Industrial Service Support?</h2>
+
+    <p>Contact us to discuss your project requirements.</p>
+
+    <a href="{% url 'contact' %}" class="btn orange-btn">Contact Our Team</a>
+
+</section>
+
+{% endblock %}
